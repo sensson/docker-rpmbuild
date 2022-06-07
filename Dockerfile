@@ -24,5 +24,5 @@ RUN useradd builder -u 1000 -m -G users,wheel -d /srv/pkg && \
     chown -R builder /srv/pkg
 USER builder
 
-ENV FLAVOR=rpmbuild OS=centos DIST=el8
+ENV FLAVOR=rpmbuild OS=${FROM} DIST=8
 CMD /srv/rpmbuild/pkg
