@@ -29,6 +29,6 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: sensson/docker-rpmbuild:${{ matrix.os }}-{{ matrix.version }}
+        tags: sensson/docker-rpmbuild:${{ matrix.os }}-${{ matrix.version }}
         build-args: |
           FROM: ${{ matrix.os }}
