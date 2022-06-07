@@ -1,4 +1,5 @@
-FROM centos:8
+ARG FROM=rockylinux
+FROM ${FROM}:8
 
 RUN yum install -y gcc gcc-c++ \
     libtool libtool-ltdl \
