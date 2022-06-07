@@ -1,7 +1,20 @@
-# CentOS
+# rpmbuild
 
 This docker image can be used to build RPM packages. It is a copy of what is
-made by rpmbuild, but updated to CentOS 8.
+made by rpmbuild, but updated to support both Rockylinux and Almalinux 8.
+
+## Images
+
+We publish images in the following format:
+
+- rpmbuild-{operatingsystem}-{version}
+
+This means that we currently support the following images:
+
+- rpmbuild-rockylinux-8
+- rpmbuild-almalinux-8
+
+All images can be found on [Docker Hub](https://hub.docker.com/repository/docker/sensson/rpmbuild/).
 
 ## Third-Party Repositories
 
