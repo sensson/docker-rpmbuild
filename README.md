@@ -40,8 +40,8 @@ password-less sudo as any user, any group.
 Build scripts can make use of the following environment variables:
 
 - FLAVOR - will be set to rpmbuild
-- OS - will be set to centos
-- DIST - will be set to el8
+- OS - will be set to to either rockylinux, almalinux or oraclelinux
+- DIST - will be set to 8
 
 ## Hook / Integration
 
