@@ -14,7 +14,7 @@ This means that we currently support the following images:
 - rpmbuild-rockylinux-8
 - rpmbuild-almalinux-8
 
-All images can be found on [Docker Hub](https://hub.docker.com/repository/docker/sensson/rpmbuild/).
+All images can be found on [Docker Hub](https://hub.docker.com/r/sensson/rpmbuild).
 
 ## Third-Party Repositories
 
