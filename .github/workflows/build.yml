@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         version: [8]
-        os: [rockylinux, almalinux]
+        os: [rockylinux, almalinux, oraclelinux]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
