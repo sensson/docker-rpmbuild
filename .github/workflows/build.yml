@@ -32,3 +32,4 @@ jobs:
         tags: sensson/rpmbuild:${{ matrix.os }}-${{ matrix.version }}
         build-args: |
           FROM: ${{ matrix.os }}
+          VERSION: ${{ matrix.version }}

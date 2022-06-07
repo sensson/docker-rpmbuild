@@ -1,5 +1,7 @@
 ARG FROM=rockylinux
-FROM ${FROM}:8
+ARG VERSION=8
+
+FROM ${FROM}:${VERSION}
 
 RUN yum install -y gcc gcc-c++ \
     libtool libtool-ltdl \
@@ -24,5 +26,8 @@ RUN useradd builder -u 1000 -m -G users,wheel -d /srv/pkg && \
     chown -R builder /srv/pkg
 USER builder
 
-ENV FLAVOR=rpmbuild OS=$FROM DIST=8
+ENV FLAVOR=rpmbuild
+ENV OS=$FROM
+ENV DIST=8
+
 CMD /srv/rpmbuild/pkg
