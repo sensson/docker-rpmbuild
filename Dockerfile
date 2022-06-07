@@ -31,6 +31,6 @@ USER builder
 
 ENV FLAVOR=rpmbuild
 ENV OS=$FROM
-ENV DIST=8
+ENV DIST=$VERSION
 
 CMD /srv/rpmbuild/pkg
