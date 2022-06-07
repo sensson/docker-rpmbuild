@@ -3,6 +3,9 @@ ARG VERSION=8
 
 FROM ${FROM}:${VERSION}
 
+ARG FROM
+ARG VERSION
+
 RUN yum install -y gcc gcc-c++ \
     libtool libtool-ltdl \
     make cmake \
