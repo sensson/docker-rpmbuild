@@ -11,7 +11,7 @@ jobs:
   build:
     strategy:
       matrix:
-        version: [8]
+        version: [8, 9]
         os: [rockylinux, almalinux, oraclelinux]
     runs-on: ubuntu-latest
     steps:
