@@ -1,7 +1,7 @@
 # rpmbuild
 
 This docker image can be used to build RPM packages. It is a copy of what is
-made by rpmbuild, but updated to support both Rockylinux and Almalinux 8.
+made by rpmbuild, but updated to support both Rockylinux and Almalinux 8 & 9.
 
 ## Images
 
@@ -11,8 +11,9 @@ We publish images in the following format:
 
 This means that we currently support the following images:
 
-- rpmbuild-rockylinux-8
-- rpmbuild-almalinux-8
+- rpmbuild:rockylinux-8 & 9
+- rpmbuild:almalinux-8 & 9
+- rpmbuild:oraclelinux-8 & 9
 
 All images can be found on [Docker Hub](https://hub.docker.com/r/sensson/rpmbuild).
 
@@ -41,7 +42,7 @@ Build scripts can make use of the following environment variables:
 
 - FLAVOR - will be set to rpmbuild
 - OS - will be set to to either rockylinux, almalinux or oraclelinux
-- DIST - will be set to 8
+- DIST - will be set to 8 or 9
 
 ## Hook / Integration
 
