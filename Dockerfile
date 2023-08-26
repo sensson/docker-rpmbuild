@@ -6,6 +6,8 @@ FROM ${FROM}:${VERSION}
 ARG FROM
 ARG VERSION
 
+ENV RELEASE=0.0.1
+
 RUN yum install -y gcc gcc-c++ \
     libtool libtool-ltdl \
     make cmake \
@@ -25,6 +27,7 @@ RUN useradd builder -u 1000 -m -G users,wheel -d /srv/pkg && \
     echo "%_specdir   %{_topdir}"        >> /srv/pkg/.rpmmacros && \
     echo "%_rpmdir    %{_topdir}"        >> /srv/pkg/.rpmmacros && \
     echo "%_srcrpmdir %{_topdir}"        >> /srv/pkg/.rpmmacros && \
+    echo "%version    $RELEASE"          >> /srv/pkg/.rpmmacros && \
     mkdir /srv/pkg/rpm && \
     chown -R builder /srv/pkg
 USER builder
